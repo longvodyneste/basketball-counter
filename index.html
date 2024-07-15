@@ -1,15 +1,38 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>People entered:</h1>
-            <h2 id="count-el">0</h2>
-            <button id="increment-btn" onclick="increment()">INCREMENT</button>
-            <button id="save-btn" onclick="save()">SAVE</button>
-            <p id="save-el">Previous entries: </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h3>HOME</h3>
+            <span class="counter" id="home-counter">0</span><br>
+            <div class="home-buttons">
+                <button class="increment-button" onclick="incrementHome1()">+1</button>
+                <button class="increment-button" onclick="incrementHome2()">+2</button>
+                <button class="increment-button" onclick="incrementHome3()">+3</button>
+            </div>
+            
         </div>
-        <script src="index.js"></script>
-    </body>
+        <div>
+            <h3>GUEST</h3>
+            <span class="counter" id="guest-counter">0</span><br>
+            <div class="guest-buttons">
+                <button class="increment-button" onclick="incrementGuest1()">+1</button>
+                <button class="increment-button" onclick="incrementGuest2()">+2</button>
+                <button class="increment-button" onclick="incrementGuest3()">+3</button>
+            </div>
+           
+        </div> 
+    </div>
+    <div id="new-game-button-container">
+        <button id="new-game-button" onclick="startNewGame()">START A NEW GAME</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
 </html>

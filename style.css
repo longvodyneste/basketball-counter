@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: hsl(229, 47%, 20%)
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+h3{
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.counter{
+    color: hsl(349, 93%, 64%);
+    font-family: Cursed 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4rem;
+    background-color: black;
+}
+.increment-button{
+    margin-top: 15px;
+    color: hsl(224, 44%, 73%);
+    background-color: hsl(229, 47%, 20%);
+    font-size: 1.5rem;
+    border: 1px solid;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(229, 47%, 30%);
+}
+#new-game-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#new-game-button{
+    background-color: hsl(229, 47%, 20%);
+    color: white;
+    font-size: 2rem;
+    margin-top: 15px;
+    border: 1px solid;
+}

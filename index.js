@@ -1,15 +1,42 @@
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById("count-el")
-let count = 0
+let homeCount = 0;
+let guestCount = 0;
 
-function increment() {
-    count += 1
-    countEl.textContent = count
+const homeCounter = document.getElementById("home-counter");
+const guestCounter = document.getElementById("guest-counter");
+
+function incrementHome1(){
+    homeCount++;
+    homeCounter.textContent = homeCount;
 }
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
+function incrementHome2(){
+    homeCount += 2;
+    homeCounter.textContent = homeCount;
+}
+
+function incrementHome3(){
+    homeCount += 3;
+    homeCounter.textContent = homeCount;
+}
+
+function incrementGuest1(){
+    guestCount++;
+    guestCounter.textContent = guestCount;
+}
+
+function incrementGuest2(){
+    guestCount += 2;
+    guestCounter.textContent = guestCount;
+}
+
+function incrementGuest3(){
+    guestCount += 3;
+    guestCounter.textContent = guestCount;
+}
+
+function startNewGame(){
+    homeCount = 0;
+    guestCount = 0;
+    homeCounter.textContent = homeCount;
+    guestCounter.textContent = guestCount;
 }
